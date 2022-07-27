@@ -1,0 +1,33 @@
+###
+GET http://localhost:3000/paises
+
+###
+POST http://localhost:3000/paises
+Content-Type: application/json
+
+{
+    "nombre":"Paco",
+    "capital":"Jefe de Sistemas",
+    "poblacion": 2,
+    "moneda":"Peso ugandes",
+    "continente": "America"
+}
+
+###
+DELETE http://localhost:3000/paises/62e09f8a4fd1501d96496fc6
+
+###
+GET http://localhost:3000/paises/62e09f8a4fd1501d96496fc6
+
+###
+PUT http://localhost:3000/paises/62e09f8a4fd1501d96496fc6
+Content-Type: application/json
+
+{
+    "_id":"62e09f8a4fd1501d96496fc6",
+    "nombre":"México",
+    "capital":"DF",
+    "poblacion": 20,
+    "moneda":"Peso",
+    "continente": "America"
+}
